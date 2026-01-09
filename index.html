@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyrotechnic University of Pasig</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --blue-dark: #0a2540;
+            --blue-medium: #1e3a8a;
+            --blue-light: #3b82f6;
+            --blue-soft: #eef4ff;
+            --accent: #38bdf8;
+        }
+
+        body {
+            background-color: var(--blue-soft);
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: var(--blue-dark);
+            padding: 14px 0;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: var(--accent) !important;
+        }
+
+        /* HERO */
+        .hero-section {
+            background:
+                linear-gradient(rgba(10, 37, 64, 0.75), rgba(10, 37, 64, 0.75)),
+                <img src="uni.jpg">
+            background-size: cover;
+            background-position: center;
+            padding: 110px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            opacity: 0.9;
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            text-align: center;
+            font-weight: 700;
+            color: var(--blue-dark);
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 90px;
+            height: 4px;
+            background-color: var(--accent);
+            display: block;
+            margin: 12px auto 0;
+            border-radius: 10px;
+        }
+
+        /* CARDS */
+        .card {
+            border: none;
+            border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-weight: 700;
+            color: var(--blue-dark);
+        }
+
+        .btn-custom {
+            background-color: var(--blue-medium);
+            color: #fff;
+            font-weight: 600;
+            border-radius: 25px;
+            padding: 8px 22px;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--blue-light);
+            color: #fff;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: var(--blue-dark);
+            color: #ffffff;
+            padding: 35px 0;
+            margin-top: 60px;
+        }
+
+        .footer-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .footer-link {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">Goated University of Bihar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="grade_calculator.html">Grade Calculator</a></li>
+                <li class="nav-item"><a class="nav-link" href="clubs.html">Clubs</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section">
+    <div class="container">
+<h1 style="color:black;">Shaping Minds. Igniting Futures.</h1>
+    <h2 style="color:black;">A Modern Learning Community in Bihar</h2>
+       
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="container mt-5">
+    <h2 class="section-title">About Our University</h2>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <p>
+                Goated University of Bihar strives to offer high-quality education that nurtures creativity, critical thinking, and responsible leadership among students.
+            </p>
+            <p>
+                Through strong academic programs, student organizations, and modern facilities,
+                we prepare learners for real-world challenges and lifelong success.
+            </p>
+            <a href="#" class="btn btn-custom">Discover More</a>
+        </div>
+        <div class="col-md-6">
+            <img src="uni.jpg"
+                 class="img-fluid rounded" alt="Campus">
+        </div>
+    </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="container mt-5">
+    <h2 class="section-title">Academic Programs</h2>
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">STEM Excellence</h5>
+                    <p class="card-text">
+                        Hands-on learning in science, technology, engineering, and mathematics
+                        designed for future innovators.
+                    </p>
+                    <a href="#" class="btn btn-custom">View Program</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Creative Arts</h5>
+                    <p class="card-text">
+                        Explore visual arts, music, theater, and performance in a supportive
+                        creative environment.
+                    </p>
+                    <a href="#" class="btn btn-custom">View Program</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Athletics & Wellness</h5>
+                    <p class="card-text">
+                        Competitive and recreational sports that promote teamwork,
+                        discipline, and physical well-being.
+                    </p>
+                    <a href="#" class="btn btn-custom">View Program</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h3 class="footer-title">Goated University</h3>
+                <p>
+                    Bihar, Infia<br>
+                    Phone: (123) 456-7890
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="footer-title">Resources</h3>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">Admissions</a></li>
+                    <li><a class="footer-link" href="#">Academic Calendar</a></li>
+                    <li><a class="footer-link" href="#">Student Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="footer-title">Follow Us</h3>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">Facebook</a></li>
+                    <li><a class="footer-link" href="#">Instagram</a></li>
+                    <li><a class="footer-link" href="#">YouTube</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+            <p>&copy; 2025 Goated University of Bihar</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

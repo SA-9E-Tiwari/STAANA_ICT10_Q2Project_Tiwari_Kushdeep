@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #3a7bd5, #3a6073); /* Same gradient theme as calculator */
+    color: #fff;
+}
+
+.container {
+    width: 700px;
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #3a7bd5; /* Matching calculator header color */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3a7bd5;
+    padding-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #3a7bd5;
+    margin-bottom: 8px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #3a7bd5;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+}
+
+select:focus {
+    border-color: #2f65b8;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3a7bd5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2f65b8;
+}
+
+.info-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f4f8ff; /* Light blue tint to match theme */
+    border-radius: 12px;
+    border-left: 6px solid #3a7bd5;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #333;
+    white-space: pre-wrap; /* Maintain line breaks from PyScript output */
+}

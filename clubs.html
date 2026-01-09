@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>School Club Information</h1>
+
+    <label for="club-select">Select a club:</label>
+    <select id="club-select">
+        <option value="">-- Select a club --</option>
+        <option value="chess">Chess Club</option>
+        <option value="drama">Drama Club</option>
+        <option value="robotics">Robotics Club</option>
+        <option value="debate">Debate Club</option>
+        <option value="art">Art Club</option>
+    </select>
+
+    <button onclick="showClubInfo()">Show Club Information</button>
+
+    <div id="club-info" class="info-box"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
